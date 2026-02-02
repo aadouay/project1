@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: white;
+  user-select: none;
+}
+
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  max-width : 800px;
+  margin: 26px auto;
+  align-items: center;
+  padding-left: 8px;
+  padding-block: 2px;
+  padding-right: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  top: 0;
+}
+
+.header-sction {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-a:hover {
+  color: #A0A0A0;
+}
+
+.header-sction-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding-inline: 12px;
+  padding-block: 10px;
+  border-radius: 4px;
+}
+
+.star:hover {
+  background: #FFFFFF20;
+}
+
+.star svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.star:hover svg {
+  fill: gold;
+  stroke: gold;
+}
+
+.star-text {
+  font-size: 12px;
+}
+
+.star-counter {
+  font-size: 10px;
+}
+
+.header-sction-button {
+  background-color: #0F2C17;
+  text-decoration: none;
+  /* font-size: 0.875rem; */
+  font-weight: 400;
+  font-family: "Inter", "Inter Fallback";
+  /* padding: 15px 20px; */
+  padding-inline: 12px;
+  padding-block: 10px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-sction-button:hover {
+  background-color: #11351B;
+}
+
+.video-container {
+    /* position: fixed; Stays in place during scroll */
+    inset: 0;
+    max-width: 100%;
+    overflow: hidden;
+    height: 80vh;
+}
+
+
+/* Optional: Add an overlay to make text easier to read */
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555); /* Darkens the video slightly */
+    backdrop-filter: blur(7px);
+}
+
+
+.content{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    /* background-color: rgba(52, 59, 59, 0.219); */
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.info{
+    display: flex;
+    gap: 7px;
+    background: #0f2c1781; /* Very faint white */
+    backdrop-filter: blur(12px);           /* The "frosted" effect */
+    -webkit-backdrop-filter: blur(12px);    /* Support for Safari */
+    width: 24%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    margin-top: 30px;
+    border-radius: 100px;
+    animation: float 3s ease-in-out infinite;
+    padding-inline: 14px;
+    min-width: max-content;
+}
+
+@keyframes float {
+  0%, 100% {
+    box-shadow: 0 6px 30px  rgb(20, 71, 7);
+  }
+  50% {
+    /* Shadow becomes wider and lighter as the button "lifts" */
+    box-shadow: 0 5px 20px rgba(20, 71, 7, 0.404);
+  }
+}
+
+.fa-solid{
+    color: green;
+    font-size: 12px;
+}
+
+.msg{
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+.main-title1{
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.main-title2{
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.platform-description{
+    margin-top: 25px;
+    color: #6b6b6b;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .platform-description {
+        width: 94%;
+    }
+}
+
+.platform-description span{
+    color: rgb(21, 97, 2);
+}
+
+.ask-ai{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tt {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* border-radius: 50px; */
+    border-radius: 12px;
+    padding-right: 2px;
+    padding-left: 25px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.details-input{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.ask-button{
+    background-color:  #0F2C17;
+    border: none;
+    /* margin-right: 10px; */
+    transition: background-color 0.3s;
+    width: 300px;
+    height: 56px;
+    padding:10px 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+}
+.ask-button:hover{
+    background-color: #0d5f2481;
+}
+
+.Cards-container{
+    z-index: 1;
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    gap: 30px;
+    position:relative;
+    bottom: -65px;
+}
+
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 15px;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(10, 32, 4, 0.068);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card1:hover{
+  background-color: rgba(10, 32, 4, 0.363);
+}
+
+.card2:hover{
+  background-color: rgba(10, 32, 4, 0.363);
+}
+
+.card3:hover{
+  background-color: rgba(10, 32, 4, 0.363);
+}
+.speed-title{
+  margin-top: 20px;
+  text-align: center;
+}
+.speed-desc{
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.678);
+}
+/* .speed-badge{
+  display: flex;
+  margin-top: 20px;
+  gap : 5px;
+  align-items: center;
+  background-color: #0f2c178a;
+  padding-inline: 12px;
+  padding-block: 10px;
+  border-radius: 4px;
+}
+.speed-icon{
+  color: gold;
+} */
+
+.speed {
+  margin-top: 30px;
+}
+
+.speed path{
+  fill: #06571d;
+  /* opacity: 50%; */
+}
