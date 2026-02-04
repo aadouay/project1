@@ -290,7 +290,7 @@ body {
     font-size: 15px;
 }
 .ask-button:hover{
-    background-color: #0d5f2481;
+    background-color: #11351B;
 }
 
 .Cards-container{
@@ -321,16 +321,20 @@ body {
 }
 
 .card1:hover{
-  background-color: rgba(10, 32, 4, 0.363);
+  border: 1px solid #bf5af265;
+  box-shadow: 0 0 15px rgba(191, 90, 242, 0.6);
 }
 
 .card2:hover{
-  background-color: rgba(10, 32, 4, 0.363);
+  border: 1px solid #0a84ff56;
+  box-shadow: 0 0 15px rgba(10, 132, 255, 0.6);
 }
 
 .card3:hover{
-  background-color: rgba(10, 32, 4, 0.363);
+  border: 1px solid #30d15856;
+  box-shadow: 0 0 15px rgba(48, 209, 88, 0.6);
 }
+
 .speed-title{
   margin-top: 20px;
   text-align: center;
@@ -339,27 +343,19 @@ body {
   margin-top: 20px;
   font-size: 12px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.678);
+  color: #6b6b6b;
+  font-weight: 400;
 }
-/* .speed-badge{
-  display: flex;
-  margin-top: 20px;
-  gap : 5px;
-  align-items: center;
-  background-color: #0f2c178a;
-  padding-inline: 12px;
-  padding-block: 10px;
-  border-radius: 4px;
-}
-.speed-icon{
-  color: gold;
-} */
 
 .speed {
-  margin-top: 30px;
+  margin-top: 5px;
+  width: 100px;
 }
-
-.speed path{
-  fill: #06571d;
-  /* opacity: 50%; */
+.prepar {
+  margin-top: 15px;
+  width: 80px;
+}
+.skill {
+  margin-top: 15px;
+  width: 70px;
 }
