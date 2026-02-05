@@ -41,6 +41,12 @@ body {
   top: 0;
 }
 
+.logo{
+  transition: all 0.6s ease-in-out;
+}
+.logo:hover{
+  transform: rotate(360deg);
+}
 .header-sction {
   display: flex;
   align-items: center;
@@ -120,7 +126,7 @@ body {
 .video-container {
     /* position: fixed; Stays in place during scroll */
     inset: 0;
-    max-width: 100%;
+    min-width: 100%;
     overflow: hidden;
     height: 80vh;
 }
@@ -323,16 +329,21 @@ body {
 .card1:hover{
   border: 1px solid #bf5af265;
   box-shadow: 0 0 15px rgba(191, 90, 242, 0.6);
+  transform: rotate(1deg) scale(1.02);
 }
 
 .card2:hover{
   border: 1px solid #0a84ff56;
   box-shadow: 0 0 15px rgba(10, 132, 255, 0.6);
+  transform:  rotate(-1deg) scale(1.02);
+
 }
 
 .card3:hover{
   border: 1px solid #30d15856;
   box-shadow: 0 0 15px rgba(48, 209, 88, 0.6);
+  transform: rotate(1deg) scale(1.02);
+
 }
 
 .speed-title{
